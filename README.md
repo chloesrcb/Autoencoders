@@ -13,3 +13,15 @@ Auteurs :
 
 
 Lien vers l'article : Chapitre 14 de "Deep Learning" : https://www.deeplearningbook.org/contents/autoencoders.html.
+
+Structure d'un autoencodeur : 
+
+<p align="center">
+  <img src=https://pic2.zhimg.com/v2-86cbd5045efdbebec7961c1cce619fcd_b.jpg width="350">
+</p>
+
+Vous retrouverez dans : 
+  * le dossier data_files : les données que nous allons utiliser dans le code.
+  * le dossier images : les images des sorties de nos codes Python.
+  * le fichier source ae_source.py : le code Python.
+  * le fichier script ae_script.py : un exemple d'autoencodeur débruiteur.
