@@ -11,7 +11,7 @@ def noiser(X, sigma):
     n = X.shape[0]
     X_noisy = X.copy()
     for idx in range(n):
-        noise = np.random.normal(0, sigma, 28*28)
+        noise = np.random.normal(0.5, sigma, 28*28)
         for i in range(28):
             for j in range(28):
                 X_noisy[idx][i * 28 + j] += noise[i * 28 + j]
