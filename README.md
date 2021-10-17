@@ -16,7 +16,7 @@ Structure des fichiers :
   * dossier `data_files` : les données `MNIST` que nous avons utilisé.
   * dossier `images` : les images des sorties de quelques exemples.
   * fichier `source ae_source.py` : le code des fonctions.
-  * fichier `script ae_script.py` : le code de démonstration pour 2 autoencodeurs débruiteurs et un autoencodeurs sur-complété.
+  * fichier `script ae_script.py` : le code de démonstration pour 2 autoencodeurs débruiteurs et un autoencodeur sur-complété.
 
 
 Le code ayant inspiré notre travail se trouve ici : 
