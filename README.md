@@ -12,4 +12,4 @@ Auteurs :
 
 
 
-Chapitre 14 de "Deep Learning" : https://www.deeplearningbook.org/contents/autoencoders.html.
+Lien vers l'article : Chapitre 14 de "Deep Learning" : https://www.deeplearningbook.org/contents/autoencoders.html.
