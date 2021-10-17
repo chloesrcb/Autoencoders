@@ -18,10 +18,11 @@ def noiser(X, sigma):
     return(X_noisy)
 
 
-def plot_reconst(idx, X_noisy, X_reconst, X_original):
+def plot_reconst(idx, X_input, X_reconst, X_original):
+    # affiche, pour l'indice idx, l'image d'entrée, l'image reconstruite et l'image originale 
     plt.figure(figsize = (15,8))
     plt.subplot(1,3,1)
-    plt.imshow(X_noisy[idx].reshape(28,28), 'gray')
+    plt.imshow(X_input[idx].reshape(28,28), 'gray')
     plt.title('Image en entrée', fontsize = 15)
     plt.xticks([])
     plt.yticks([])
@@ -38,10 +39,11 @@ def plot_reconst(idx, X_noisy, X_reconst, X_original):
     plt.show()
 
 
-def plot_reconst_comparaison(idx, X_noisy, X_reconst1, X_reconst2, X_original):
+def plot_reconst_comparaison(idx, X_input, X_reconst1, X_reconst2, X_original):
+    # affiche, pour l'indice idx, l'image d'entrée, les 2 images reconstruites et l'image originale 
     plt.figure(figsize = (15,8))
     plt.subplot(1,4,1)
-    plt.imshow(X_noisy[idx].reshape(28,28), 'gray')
+    plt.imshow(X_input[idx].reshape(28,28), 'gray')
     plt.title('Image en entrée', fontsize = 15)
     plt.xticks([])
     plt.yticks([])
@@ -64,6 +66,7 @@ def plot_reconst_comparaison(idx, X_noisy, X_reconst1, X_reconst2, X_original):
 
 
 def plot_image(X):
+    # affiche une image aléatoire dans les données X
     idx = np.random.randint(X.shape[0])
     img = X[idx].reshape(28,28)
 
@@ -74,8 +77,8 @@ def plot_image(X):
     plt.show()
 
 
-def DAEClassifier(n_input, n_encoder1, n_encoder2, n_latent, n_decoder2, n_decoder1):
-    # 
+def DAE(n_input, n_encoder1, n_encoder2, n_latent, n_decoder2, n_decoder1):
+    # crée un autoencodeur débruiteur
     DAE = MLPRegressor(hidden_layer_sizes = (n_encoder1, n_encoder2, n_latent, n_decoder2, n_decoder1), 
                    activation = 'tanh', 
                    solver = 'adam', 

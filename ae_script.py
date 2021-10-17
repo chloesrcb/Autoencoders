@@ -50,8 +50,8 @@ n_decoder1 = 1200
 
 #%%
 # Autoencodeurs débruiteurs 
-DAE_50 = DAEClassifier(n_input, n_encoder1, n_encoder2, n_latent1, n_decoder2, n_decoder1)
-DAE_4 = DAEClassifier(n_input, n_encoder1, n_encoder2, n_latent2, n_decoder2, n_decoder1)
+DAE_50 = DAE(n_input, n_encoder1, n_encoder2, n_latent1, n_decoder2, n_decoder1)
+DAE_4 = DAE(n_input, n_encoder1, n_encoder2, n_latent2, n_decoder2, n_decoder1)
 
 #%%
 # Training avec couche cachée de 50 neurones
@@ -168,7 +168,7 @@ n_decoder2 = 1000
 n_decoder1 = 1200
 
 #%%
-DAE_surcomplet = DAEClassifier(n_input, n_encoder1, n_encoder2, n_latent1, n_decoder2, n_decoder1)
+DAE_surcomplet = DAE(n_input, n_encoder1, n_encoder2, n_latent1, n_decoder2, n_decoder1)
 
 #%%
 idx = np.random.randint(X_test.shape[0])
