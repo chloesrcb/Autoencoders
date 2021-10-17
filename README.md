@@ -2,7 +2,7 @@
 
 Ce travail consistait à étudier un article traitant des autoencodeurs. Le lien vers cet article est disponible plus bas.
 
-Nous avons fait ressortir la problématique et les solutions présentées dans cet article. Nous avons étudié plus en détail sur un type d'autoencodeur appelé autoencodeur débruiteur. Des illustrations sur différents exemples sont proposés dans les fichiers ci-joint.
+Nous avons fait ressortir la problématique et les solutions présentées dans cet article. Nous avons étudié plus en détail sur un type d'autoencodeur appelé autoencodeur débruiteur. Des illustrations sur différents exemples sont proposés dans les fichiers ci-joints.
 
 
 Auteurs : 
@@ -21,7 +21,7 @@ Structure d'un autoencodeur :
 </p>
 
 Vous retrouverez dans : 
-  * le dossier data_files : les données que nous allons utiliser dans le code.
-  * le dossier images : les images des sorties de nos codes Python.
-  * le fichier source ae_source.py : le code Python.
-  * le fichier script ae_script.py : un exemple d'autoencodeur débruiteur.
+  * le dossier `data_files` : les données que nous allons utiliser dans le code.
+  * le dossier `images` : les images des sorties de nos codes Python.
+  * le fichier `source ae_source.py` : le code des fonctions Python.
+  * le fichier `script ae_script.py` : le code de démonstration pour 2 autoencodeurs débruiteurs.
