@@ -79,7 +79,8 @@ def plot_image(X):
 
 def DAE(n_input, n_encoder1, n_encoder2, n_latent, n_decoder2, n_decoder1):
     # crée un autoencodeur débruiteur
-    DAE = MLPRegressor(hidden_layer_sizes = (n_encoder1, n_encoder2, n_latent, n_decoder2, n_decoder1), 
+    DAE = MLPRegressor(hidden_layer_sizes = (n_encoder1, n_encoder2, 
+                                             n_latent, n_decoder2, n_decoder1), 
                    activation = 'tanh', 
                    solver = 'adam', 
                    learning_rate_init = 0.0001, 
